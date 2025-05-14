@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Security Warning</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: red;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .warning {
+      animation: blink 1s step-start infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="warning">
+    <h1>⚠️ YOU'VE BEEN HACKED ⚠️</h1>
+    <p>Your system security is weak.</p>
+    <p>Next time, be smarter.</p>
+    <p>Stay safe. Be smart.</p>
+  </div>
+</body>
+</html>
